@@ -226,20 +226,7 @@ export default class extends Component<Props, State> {
 				{(!this.props.video ||
 					!(this._snapshot && this._snapshot.hasVideo)) && (
 					<div className='agora-player__placeholder'>
-						{this.props.placeholder ? (
-							// this.props.placeholder
-							<img
-								style={{ maxWidth: '100%' }}
-								src={PLACEHOLDER}
-								alt='placeholder for video'
-							/>
-						) : (
-							<img
-								style={{ maxWidth: '100%' }}
-								src={PLACEHOLDER}
-								alt='placeholder for video'
-							/>
-						)}
+						{this.props.placeholder}
 					</div>
 				)}
 

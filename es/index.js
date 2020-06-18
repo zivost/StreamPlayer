@@ -186,17 +186,7 @@ var _default = (_temp = _class = function (_Component) {
 			(!this.props.video || !(this._snapshot && this._snapshot.hasVideo)) && React.createElement(
 				'div',
 				{ className: 'agora-player__placeholder' },
-				this.props.placeholder ?
-				// this.props.placeholder
-				React.createElement('img', {
-					style: { maxWidth: '100%' },
-					src: PLACEHOLDER,
-					alt: 'placeholder for video'
-				}) : React.createElement('img', {
-					style: { maxWidth: '100%' },
-					src: PLACEHOLDER,
-					alt: 'placeholder for video'
-				})
+				this.props.placeholder
 			),
 			React.createElement(
 				'div',
