@@ -253,13 +253,9 @@ export default class extends Component<Props, State> {
 					)}
 
 					{/* decoration to show if this stream is speaking  */}
-					{this.props.speaking && (
+					{this.props.audioLevel > 0 && (
 						<div className='agora-player__icon'>
-							<img
-								title='Is speaking'
-								src={SpeakerIcon}
-								alt='speaking'
-							/>
+							<meter max='10' min='0.0' value={this.props.audioLevel} high='7' low='2.5' optimum='0.5'></meter>
 						</div>
 					)}
 
