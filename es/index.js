@@ -197,14 +197,14 @@ var _default = (_temp = _class = function (_Component) {
 					'div',
 					{ className: 'agora-player__icon' },
 					React.createElement('meter', { max: '10', min: '0.0', value: this.props.audioLevel, high: '7', low: '2.5', optimum: '0.5' })
-				),
-				this.props.appendIcon
+				)
 			),
 			this.props.label && React.createElement(
 				'div',
 				{
 					className: 'agora-player__label ' + this.props.labelClass
 				},
+				this.props.appendIcon,
 				this.props.label
 			)
 		);

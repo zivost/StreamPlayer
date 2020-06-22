@@ -246,7 +246,7 @@ export default class extends Component<Props, State> {
 						</div>
 					)}
 
-					{this.props.appendIcon}
+					
 				</div>
 
 				{/* display stream label */}
@@ -256,6 +256,7 @@ export default class extends Component<Props, State> {
 							`agora-player__label ` + this.props.labelClass
 						}
 					>
+						{this.props.appendIcon}
 						{this.props.label}
 					</div>
 				)}
